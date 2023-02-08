@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-lg-4 col-4">
+        <img src="{{model.thumbnail.path}}.{{model.thumbnail.extension}}" style="width: 100%;"  alt="">
+    </div>
+    <div class="col-lg-8">
+        <h2>{{model.title}}</h2>
+     
+        <br>
+        <p>{{model.description}}</p>
+<br>
+<h5>Ilustradores</h5>
+{{#each model.creators.items}}
+{{name}},
+ {{/each}}
+<hr>
+<h5>Personajes de ficción</h5>
+{{#each model.characters.items}}
+{{name}},
+ {{/each}}
+    </div>
+</div>
