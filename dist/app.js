@@ -10,7 +10,7 @@ class Application {
     }
     start() {
         this.app.listen(3000, () => {
-            console.log("hola we");
+            console.log("running");
         });
     }
 }
